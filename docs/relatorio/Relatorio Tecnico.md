@@ -81,10 +81,10 @@ mais jovem e conectado.
 
 ## Personas, Empatia e Proposta de Valor
 
- ![Persona 01](images/persona-01.pdf)
+ ![Persona 01](images/Persona-01.pdf)
 
  
- ![Persona 02](images/persona-02.pdf)
+ ![Persona 02](images/Persona-02.pdf)
 
 
 
