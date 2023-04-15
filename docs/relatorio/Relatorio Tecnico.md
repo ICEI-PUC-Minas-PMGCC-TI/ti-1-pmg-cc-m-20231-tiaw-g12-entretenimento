@@ -107,34 +107,29 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| O sistema deverá cadastrar o usuário | BAIXA | 
-|RF-002| O usuário deverá conseguir gerar uma senha para sua conta | ALTA |
-|RF-003| Ter imagens dos conteúdos | MÉDIA | 
-|RF-004| O sistema deve ser capaz de deixar o usuário alterar seus dados | ALTA | 
-|RF-005| O sistema deve operar 24/7 | ALTA | 
-|RF-006| O sistema deve ser capaz de lidar com o alto tráfego de
-usuários | ALTA | 
-|RF-007| O usuário deve conseguir alterar suas listas de marcações | MÉDIA | 
-|RF-008| O sistema deverá mostrar uma aba de pesquisa que pode ser
-digitada ou marcada por tags | ALTA | 
+|ID    | Descrição do Requisito                                                           | Prioridade |
+|------|---------------------------------------------------------------------------------------|-------|
+|RF-001| O sistema deverá cadastrar o usuário                                                  | BAIXA | 
+|RF-002| O usuário deverá conseguir gerar uma senha para sua conta                              | ALTA |
+|RF-003| Ter imagens dos conteúdos                                                             | MÉDIA | 
+|RF-004| O sistema deve ser capaz de deixar o usuário alterar seus dados                        | ALTA | 
+|RF-005| O sistema deve operar 24/7                                                             | ALTA | 
+|RF-006| O sistema deve ser capaz de lidar com o alto tráfego de usuários                       | ALTA | 
+|RF-007| O usuário deve conseguir alterar suas listas de marcações                             | MÉDIA | 
+|RF-008| O sistema deverá mostrar uma aba de pesquisa que pode ser digitada ou marcada por tags | ALTA | 
 
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| Ter modo claro e escuro | BAIXA | 
-|RNF-002| Ter portabilidade mobile |  BAIXA | 
-|RNF-003| Tempo de resposta <1seg | MÉDIA |
-|RNF-004| O sistema deve ser compatível com Windows XP, Vista, 7, 8,
-10, 11 e MacOS | BAIXA |
-|RNF-005| O usuário deve conseguir alterar os comentários feitos | MÉDIA |
-|RNF-006| O sistema poderá avisar sobre novos conteúdos que possam
-interessar o usuário | MÉDIA |
-|RNF-007| O sistema poderá mudar o fundo da página de acordo com o
-conteúdo acessado | BAIXA |
+|ID     | Descrição do Requisito                                                    |Prioridade |
+|-------|-------------------------------------------------------------------------------|-------|
+|RNF-001| Ter modo claro e escuro                                                       | BAIXA | 
+|RNF-002| Ter portabilidade mobile                                                      | BAIXA | 
+|RNF-003| Tempo de resposta <1seg                                                       | MÉDIA |
+|RNF-004| O sistema deve ser compatível com Windows XP, Vista, 7, 8, 10, 11 e MacOS     | BAIXA |
+|RNF-005| O usuário deve conseguir alterar os comentários feitos                        | MÉDIA |
+|RNF-006| O sistema poderá avisar sobre novos conteúdos que possam interessar o usuário | MÉDIA |
+|RNF-007| O sistema poderá mudar o fundo da página de acordo com o conteúdo acessado    | BAIXA |
  
 
 
