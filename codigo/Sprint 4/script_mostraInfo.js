@@ -56,7 +56,7 @@ function cadastra_Informacao() {
     let novoUsuario = { id: strId, Login: strLogin, Nome: strNome, Email: strEmail, Data: strData, Cidade: strCidade, Telefone: strTelefone };
     objUsuarios.usuarios.push(novoUsuario);
     salva_Informacao(objUsuarios);
-    window.location.href="login.html"
+    window.location.href="mostra_info.html"
 }
 
 //salva as informações
