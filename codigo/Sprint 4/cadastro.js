@@ -31,7 +31,7 @@ function cadastra_Usuario() {
         let novoUsuario = { id: strId, login: strLogin, email: strEmail, senha: strSenha };
         objUsuarios.usuarios.push(novoUsuario);
         salva_Usuario(objUsuarios);
-        window.location.href = "tela-sucesso.html";
+        window.location.href = "tela-sucesso-cadastro.html";
     } else {
         alert("Falha na confirmação de senha");
     }
