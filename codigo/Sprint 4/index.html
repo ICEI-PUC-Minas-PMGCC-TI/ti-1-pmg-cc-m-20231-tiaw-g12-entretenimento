@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieSync</title>
+  <!------------------  code by: Pedro Felipe  ------------------>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  
+ <style>
+    .container {
+      margin-top: 20px;
+    }
+
+    #trailer-box {
+      height: 100%;
+    }
+
+    footer {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    #movie-poster {
+      max-height: 450px;
+    }
+    #movie-poster,
+  #recommended-movie-poster {
+    max-height: 450px;
+    max-width: 100%;
+  }
+  .d-block {
+    object-fit: contain;
+    max-height: 450px;
+    max-width: 100%;
+  }
+
+  .user-window {
+  
+  top: 25px;
+  left: 10px;
+  background-color: rgb(56, 56, 57);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 100;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-item a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 20px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MovieSync</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Se Cadastre</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Procurar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body class="bg-secondary text-white">
+
+  <div class="container" style="position: relative;">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="user-window">
+          <a href="#" class="user-window">
+          <img src="https://via.placeholder.com/75x50" alt="User Profile Picture" class="user-picture">
+          <span class="username" id="user">Usuário</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="popularCar">
+    <!-- Most Popular Carousel -->
+    <h2 class="fw-bold mb-3">Populares</h2>
+    <div id="most-popular-carousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#most-popular-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#most-popular-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#most-popular-carousel" data-bs-slide-to="2"></li>
+      </ol>
+
+      <!-- Carousel Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="carousel-item-1">
+
+          <a href="#", class="card-link-1">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/300x450" class="d-block movie-poster" alt="Movie 1" id="movie-poster-1">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold movie-title" id="movie-title-1">Movie 1 Title</h3>
+              <p class="plot" id="plot-1">Movie 1 Plot</p>
+              <div id="review-1" class="tab-pane fade" role="tabpanel" aria-labelledby="review-tab-1">
+                <p>Review 1 Content</p>
+              </div>
+            </div>
+          </div>
+
+          </a>
+        </div>
+        <div class="carousel-item" id="carousel-item-2">
+
+          <a href="#", class="card-link-2">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/300x450" class="d-block movie-poster" alt="Movie 2" id="movie-poster-2">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold movie-title" id="movie-title-2">Movie 2 Title</h3>
+              <p class="plot" id="plot-2">Movie 2 Plot</p>
+              <div id="review-2" class="tab-pane fade" role="tabpanel" aria-labelledby="review-tab-2">
+                <p>Review 2 Content</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="carousel-item" id="carousel-item-3">
+
+          <a href="#", class="card-link-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/300x450" class="d-block movie-poster" alt="Movie 3" id="movie-poster-3">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold movie-title" id="movie-title-3">Movie 3 Title</h3>
+              <p class="plot" id="plot-3">Movie 3 Plot</p>
+              <div id="review-3" class="tab-pane fade" role="tabpanel" aria-labelledby="review-tab-3">
+                <p>Review 3 Content</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="carousel-control-prev" href="#most-popular-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#most-popular-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <!-- Recommended Carousel -->
+    <h2 class="fw-bold mt-5 mb-3">Recomendados</h2>
+    <div id="recommended-carousel" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+      <!-- Carousel Indicators -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#recommended-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#recommended-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#recommended-carousel" data-bs-slide-to="2"></li>
+      </ol>
+
+      <!-- Carousel Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="carousel-item-4">
+          <a href="#", class="card-link-4">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150x225" class="d-block movie-poster" alt="Recommended Movie 1" id="recommended-movie-poster-1">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold movie-title" id="recommended-movie-title-1">Recommended Movie 1 Title</h3>
+              <p class="plot" id="recommended-plot-1">Recommended Movie 1 Plot</p>
+              <div id="recommended-review-1" class="tab-pane fade" role="tabpanel" aria-labelledby="recommended-review-tab-1">
+                <p>Recommended Review 1 Content</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="carousel-item" id="carousel-item-5">
+          <a href="#", class="card-link-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150x225" class="d-block movie-poster" alt="Recommended Movie 2" id="recommended-movie-poster-2">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold movie-title" id="recommended-movie-title-2">Recommended Movie 2 Title</h3>
+              <p class="plot" id="recommended-plot-2">Recommended Movie 2 Plot</p>
+              <div id="recommended-review-2" class="tab-pane fade" role="tabpanel" aria-labelledby="recommended-review-tab-2">
+                <p>Recommended Review 2 Content</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="carousel-item" id="carousel-item-6">
+          <a href="#", class="card-link-6">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150x225" class="d-block movie-poster" alt="Recommended Movie 3" id="recommended-movie-poster-3">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold movie-title" id="recommended-movie-title-3">Recommended Movie 3 Title</h3>
+              <p class="plot" id="recommended-plot-3">Recommended Movie 3 Plot</p>
+              <div id="recommended-review-3" class="tab-pane fade" role="tabpanel" aria-labelledby="recommended-review-tab-3">
+                <p>Recommended Review 3 Content</p>
+              </div>
+            </div>
+          </div>
+        </a>  
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="carousel-control-prev" href="#recommended-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#recommended-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+<footer>
+	<div class="container-fluid bg-dark">
+		<div class="row p-3">
+			<a href="#" class="w-auto link link-underline link-underline-opacity-0">Home</a>
+			<a href="#" class="w-auto link link-underline link-underline-opacity-0">Sobre</a>
+			<a href="#" class="w-auto link link-underline link-underline-opacity-0">Contatos</a>
+			<a href="#" class="w-auto link link-underline link-underline-opacity-0">Parceiros</a>
+		</div>
+		<div class="row p-3">
+			<div class="text-light">© 2023 MovieSync</div>
+		</div>
+	</div>
+</footer>
+
+</html>
 
