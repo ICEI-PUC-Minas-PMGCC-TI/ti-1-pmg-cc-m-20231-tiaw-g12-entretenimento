@@ -29,8 +29,7 @@ function inicializarLocalStorage() {
   if (!localStorage.getItem('usuarios')) {
     // Cria um array com usuários de exemplo
     var usuarios = [
-      { nome: 'jorge' , email: 'usuario1@example.com', senha: 'senha123' },
-      { nome: 'paulo' , email: 'usuario2@example.com', senha: 'abcde' }
+      { id: 0, login: "Jorge", email: "jorge@email.com", senha: "23571113" }
     ];
 
     // Armazena o array no LocalStorage como uma string JSON
