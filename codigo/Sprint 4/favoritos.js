@@ -56,10 +56,10 @@ function imprime_Favoritos() {
             strHtml += `
             <div class="row py-4 border-top border-light">
                 <div class="col-1">
-                    <img src="${objFilmes.filmes[i].moviePosterSrc}" alt="${objFilmes.filmes[i].title}" class="container-fluid">
+                    <a href="movie-sceen.html?id=${objFilmes.filmes[i].id}"><img src="${objFilmes.filmes[i].moviePosterSrc}" alt="${objFilmes.filmes[i].title}" class="container-fluid"></a>
                 </div>
                 <div class="col-9">
-                    <div class="text-light h4">${objFilmes.filmes[i].title}</div>
+                <a href="movie-sceen.html?id=${objFilmes.filmes[i].id}"><div class="text-light h4">${objFilmes.filmes[i].title}</div></a>
                 </div>
                 <div class="col-2">
                     <button id="${objFilmes.filmes[i].id}" class="btn btn-danger" onclick="remove_Favorito(this.id);">Remover</button>
