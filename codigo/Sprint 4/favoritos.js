@@ -7,8 +7,7 @@ function le_Usuarios() {
     } else {
         objUsuarios = {
             usuarios: [
-                { id: 0, login: "Jorge", email: "jorge@email.com", senha: "23571113", logado: true },
-                { id: 1, login: "Josefina", email: "josefina@email.com", senha: "1468910", logado: false }
+                { id: 0, login: "Jorge", email: "jorge@email.com", senha: "23571113", logado: true }
             ]
         };
     }
