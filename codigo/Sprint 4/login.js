@@ -12,10 +12,11 @@ function verificarLogin(event) {
   // Verifica se existe algum usuário com o email e senha fornecidos
   var usuarioEncontrado = usuarios.find(function (usuario) {
     usuario.logado = false;
-    if(usuario.email === email && usuario.senha === senha){
+    usuario_existe = usuario.email === email && usuario.senha === senha;
+    if(usuario_existe){
       usuario.logado = true;
     }
-    return usuario.email === email && usuario.senha === senha;
+    return usuario_existe;
   });
 
   if (usuarioEncontrado) {
