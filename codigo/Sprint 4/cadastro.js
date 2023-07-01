@@ -11,7 +11,7 @@ function le_Usuarios() {
     } else {
         objUsuarios = {
             usuarios: [
-                { id: 0, login: "Jorge", email: "jorge@email.com", senha: "23571113" }
+                { id: 0, login: "Jorge", email: "jorge@email.com", senha: "23571113", logado: false }
             ]
         };
     }
@@ -28,7 +28,7 @@ function cadastra_Usuario() {
     let confirmarSenha = document.getElementById('confirmar-senha').value;
 
     if (strSenha === confirmarSenha) {
-        let novoUsuario = { id: strId, login: strLogin, email: strEmail, senha: strSenha };
+        let novoUsuario = { id: strId, login: strLogin, email: strEmail, senha: strSenha, logado: false };
         objUsuarios.usuarios.push(novoUsuario);
         salva_Usuario(objUsuarios);
         window.location.href = "tela-sucesso-cadastro.html";
