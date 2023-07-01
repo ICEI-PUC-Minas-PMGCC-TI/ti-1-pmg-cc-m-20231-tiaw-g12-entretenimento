@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  div {
+    align-items: center;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex: 1 0 auto;
+  }
+  
+  footer {
+    flex-shrink: 0;
+  }
+
+  .box{
+    align-items: center;
+  }
+  .container {
+    text-align: center;
+  }

@@ -1,0 +1,105 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+div {
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+h2{
+  text-align: center;
+}
+
+.container{
+  width: 100%; /* Defina a largura do contêiner conforme necessário */
+  height: 100%; /* Defina a altura do contêiner conforme necessário */
+  overflow: hidden; 
+  background-color: rgb(192, 137, 137);
+  
+}
+
+h5{
+  color: white;
+}
+
+.container-geral {
+  position: relative;
+  float: left;
+  padding: 20px;
+  margin-top: 20px; /*espaço entre o container e cabeçalho*/
+  margin-bottom: 20px; /*espaço entre o container e rodapé*/
+  margin-left: 60px;
+  background-color: #852323;
+  width: 400px; /* Defina a largura do contêiner conforme necessário */
+  height: 550px; /* Defina a altura do contêiner conforme necessário */
+  overflow: hidden; 
+}
+
+.project-img{
+  width: 100%;
+  float: left;
+  text-align: center;
+  height:max-contentt;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 75%;
+  height: 70%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box {
+  margin: 10px;
+  padding: 10px;
+}
+
+.grid {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+/*carrossel*/
+.swiper {
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: inside;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .swiper {
+    height: 100%;
+  }
+}
