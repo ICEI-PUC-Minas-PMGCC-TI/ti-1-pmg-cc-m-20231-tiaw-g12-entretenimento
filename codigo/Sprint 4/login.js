@@ -11,6 +11,10 @@ function verificarLogin(event) {
 
   // Verifica se existe algum usuário com o email e senha fornecidos
   var usuarioEncontrado = usuarios.find(function (usuario) {
+    usuario.logado = false;
+    if(usuario.email === email && usuario.senha === senha){
+      usuario.logado = true;
+    }
     return usuario.email === email && usuario.senha === senha;
   });
 
@@ -29,7 +33,7 @@ function inicializarLocalStorage() {
   if (!localStorage.getItem('usuarios')) {
     // Cria um array com usuários de exemplo
     var usuarios = [
-      { id: 0, login: "Jorge", email: "jorge@email.com", senha: "23571113" }
+      { id: 0, login: "Jorge", email: "jorge@email.com", senha: "23571113", logado: false }
     ];
 
     // Armazena o array no LocalStorage como uma string JSON
