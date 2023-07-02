@@ -32,7 +32,7 @@ function imprime_Usuario() {
 imprime_Usuario();
 
 function le_Filmes() {
-    return fetch('movies.json')
+    return fetch('movies-fav.json')
         .then(res => res.json())
         .then(json => {
             return json;
